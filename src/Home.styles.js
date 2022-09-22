@@ -3,8 +3,11 @@ import styled from "styled-components";
 
 export const PageWrapper = styled.div``;
 
-export const HeaderWrapper = styled.div`
+export const Flex = styled.div`
   display: flex;
+`;
+
+export const HeaderWrapper = styled.div`
   border-bottom: 2px solid rgb(255, 56, 100);
   background-color: rgb(255, 56, 100, 0.36);
   color: rgb(255, 56, 100);
@@ -12,7 +15,7 @@ export const HeaderWrapper = styled.div`
 export const HeaderItem = styled.div`
   font-family: "Inter";
   padding: 0.2rem 2rem;
-  width: max-content;
+  width: 12vw;
 `;
 
 export const HomeText = styled.div`
@@ -61,6 +64,7 @@ export const MenuItem = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 10vw;
   background-color: rgb(255, 56, 100, 0.36);
   color: rgb(255, 56, 100);
   padding: 0.55rem 1.5rem;
@@ -69,7 +73,6 @@ export const MenuItem = styled.div`
   border-color: rgb(255, 56, 100, 0.36);
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  width: 100%;
   font-family: "Inter";
   font-weight: 800;
   cursor: pointer;

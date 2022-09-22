@@ -1,14 +1,11 @@
 import {
   PageWrapper,
-  HeaderWrapper,
   HomeText,
-  HeaderItem,
   ArrowWrapper,
   MenuWrapper,
   MenuItem,
 } from "./Home.styles";
 import { Link } from "react-router-dom";
-import Ticker from "react-ticker";
 
 import {
   IoMdCodeWorking,
@@ -18,38 +15,45 @@ import {
 } from "react-icons/io";
 
 import { TbArrowBigDownLines } from "react-icons/tb";
+import { Header } from "./Header";
 
 export const Home = () => {
-  const MenuItemArray = [
-    { label: "About", icon: <IoMdInformation size={"1.5em"} /> },
-    { label: "Portfolio", icon: <IoMdPlanet size={"1.5em"} /> },
-    { label: "Contact", icon: <IoMdCodeWorking size={"1.5em"} /> },
-    { label: "Download", icon: <IoMdThunderstorm size={"1.5em"} /> },
-  ];
   return (
     <PageWrapper>
-      <Ticker>
-        {({ index }) => (
-          <HeaderWrapper>
-            <HeaderItem>Cassidy Lowe</HeaderItem>
-            <HeaderItem>Web + Graphics</HeaderItem>
-            <HeaderItem>Montréal // Remote</HeaderItem>
-          </HeaderWrapper>
-        )}
-      </Ticker>
-      <HomeText>Click Me</HomeText>
+      <Header />
+      <HomeText>
+        Hi, i'm cassidy,
+        <br />A graphic designer. <br />
+        Click Around below!
+      </HomeText>
       <ArrowWrapper>
         <TbArrowBigDownLines size={"2.5rem"} />
       </ArrowWrapper>
       <MenuWrapper>
-        {MenuItemArray.map((item) => {
-          return (
-            <MenuItem>
-              {item.label}
-              {item.icon}
-            </MenuItem>
-          );
-        })}
+        <Link to="/about">
+          <MenuItem>
+            About
+            <IoMdInformation size={"1.5em"} />
+          </MenuItem>
+        </Link>
+        <Link to="/portfolio">
+          <MenuItem>
+            Portfolio
+            <IoMdPlanet size={"1.5em"} />
+          </MenuItem>
+        </Link>
+        <Link to="/contact">
+          <MenuItem>
+            Contact
+            <IoMdCodeWorking size={"1.5em"} />
+          </MenuItem>
+        </Link>
+        <Link to="/portfolio.pdf" target="_blank" download>
+          <MenuItem>
+            Download
+            <IoMdThunderstorm size={"1.5em"} />
+          </MenuItem>
+        </Link>
       </MenuWrapper>
     </PageWrapper>
   );

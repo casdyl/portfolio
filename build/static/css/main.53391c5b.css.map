@@ -1,1 +1,0 @@
-{"version":3,"file":"static/css/main.53391c5b.css","mappings":"AAAA,WACE,mBAAsB,CACtB,sFACF,CAEA,KACE,QACF","sources":["global.css"],"sourcesContent":["@font-face {\n  font-family: \"Joystix\";\n  src: url(\"fonts/joystix\\ monospace.ttf\") format(\"truetype\");\n}\n\nbody {\n  margin: 0;\n}\n"],"names":[],"sourceRoot":""}
