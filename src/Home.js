@@ -29,7 +29,7 @@ export const Home = () => {
       <ArrowWrapper>
         <TbArrowBigDownLines size={"2.5rem"} />
       </ArrowWrapper>
-      <MenuWrapper>
+      <MenuWrapper bottom={"2rem"}>
         <Link to="/about">
           <MenuItem>
             About

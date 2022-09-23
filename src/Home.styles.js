@@ -58,6 +58,7 @@ export const MenuWrapper = styled.div`
   margin: auto;
   align-items: center;
   margin-top: 2.5vh;
+  margin-bottom: ${(props) => `${props.bottom}`};
 `;
 
 export const MenuItem = styled.div`
