@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.185ce835.css",
-    "main.js": "/static/js/main.84939fc3.js",
+    "main.js": "/static/js/main.998d70be.js",
     "static/media/joystix monospace.ttf": "/static/media/joystix monospace.03fd394186f4c9707258.ttf",
     "index.html": "/index.html",
     "main.185ce835.css.map": "/static/css/main.185ce835.css.map",
-    "main.84939fc3.js.map": "/static/js/main.84939fc3.js.map"
+    "main.998d70be.js.map": "/static/js/main.998d70be.js.map"
   },
   "entrypoints": [
     "static/css/main.185ce835.css",
-    "static/js/main.84939fc3.js"
+    "static/js/main.998d70be.js"
   ]
 }
