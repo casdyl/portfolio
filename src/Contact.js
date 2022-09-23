@@ -13,24 +13,24 @@ export const Contact = () => {
       <Flex dir="column" gap="2rem">
         <HomeText>Contact</HomeText>
         <MenuWrapper>
-          <Link to="mailto:cassidymlowe@gmail.com">
+          <a href="mailto:cassidymlowe@gmail.com">
             <MenuItem>
               Email
               <IoMdMail size={"1.5em"} />
             </MenuItem>
-          </Link>
-          <Link to="mailto:cassidymlowe@gmail.com">
+          </a>
+          <a href="https://www.linkedin.com/in/cassidylowe/">
             <MenuItem>
               LinkedIn
               <BsLinkedin size={"1.5em"} />
             </MenuItem>
-          </Link>
-          <Link to="mailto:cassidymlowe@gmail.com">
+          </a>
+          <a href="https://github.com/casdyl">
             <MenuItem>
               Github
               <FaGithubSquare size={"1.5em"} />
             </MenuItem>
-          </Link>
+          </a>
         </MenuWrapper>
         <MenuWrapper>
           <Link to="/">

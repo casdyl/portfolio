@@ -88,4 +88,9 @@ export const MenuItem = styled.div`
     margin: 1px;
     border: none;
   }
+
+  @media only screen and (max-width: 1000px) {
+    width: 80vw;
+    padding: 1.5rem 1.5rem;
+  }
 `;

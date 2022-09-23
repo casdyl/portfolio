@@ -5,4 +5,7 @@ export const ImgHolder = styled.div`
   padding: 1rem;
   width: 50vw;
   margin: auto;
+  @media only screen and (max-width: 1000px) {
+    width: 90vw;
+  }
 `;

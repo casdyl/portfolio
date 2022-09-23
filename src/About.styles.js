@@ -1,13 +1,5 @@
 import styled from "styled-components";
 
-export const AboutWrapper = styled.div`
-  display: flex;
-  font-family: "Inter";
-  gap: 6rem;
-  width: max-content;
-  margin: auto;
-`;
-
 export const Flex = styled.div`
   display: flex;
   flex-direction: ${(props) => `${props.dir}`};
@@ -30,4 +22,22 @@ export const Subheading = styled.div`
 export const Text = styled.div`
   font-weight: 400;
   color: rgb(255, 56, 100);
+`;
+
+export const AboutWrapper = styled.div`
+  display: flex;
+  font-family: "Inter";
+  gap: 6rem;
+  width: max-content;
+  margin: auto;
+
+  @media only screen and (max-width: 1000px) {
+    gap: 3rem;
+    flex-direction: column;
+
+    & > ${Flex} {
+      text-align: center;
+      gap: 3rem;
+    }
+  }
 `;
