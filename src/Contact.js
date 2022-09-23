@@ -19,13 +19,13 @@ export const Contact = () => {
               <IoMdMail size={"1.5em"} />
             </MenuItem>
           </a>
-          <a href="https://www.linkedin.com/in/cassidylowe/">
+          <a href="https://www.linkedin.com/in/cassidylowe/" target="_blank">
             <MenuItem>
               LinkedIn
               <BsLinkedin size={"1.5em"} />
             </MenuItem>
           </a>
-          <a href="https://github.com/casdyl">
+          <a href="https://github.com/casdyl" target="_blank">
             <MenuItem>
               Github
               <FaGithubSquare size={"1.5em"} />
